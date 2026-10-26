@@ -1,1 +1,257 @@
+/* ==========================================
+   1. VARIABLES GLOBALES (:root)
+   ========================================== */
+:root {
+    --color-primary: #d4af37;      /* Dorado principal */
+    --color-bg-dark: #0b0b0b;      /* Fondo negro para header/navbar */
+    --color-bg-body: #121212;      /* Fondo general de la web */
+    --color-card-bg: #1a1a1a;      /* Fondo oscuro de las tarjetas */
+    --color-border: #d4af37;       /* Dorado para bordes */
+    --color-text-main: #e0e0e0;    /* Texto claro principal */
+    --color-text-muted: #c5c5c5;   /* Texto secundario */
+}
 
+/* ==========================================
+   2. ESTILOS BASE Y GENERALES
+   ========================================== */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--color-bg-body);
+    color: var(--color-text-main);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+}
+
+/* ==========================================
+   3. ENCABEZADO SUPERIOR (HEADER)
+   ========================================== */
+header {
+    background-color: var(--color-bg-dark); 
+    padding: 25px 20px;
+    border-bottom: none;
+    width: 100%;
+}
+
+.top-header-content {
+    display: flex;
+    align-items: center;     
+    justify-content: center; 
+    gap: 25px;               
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header-logo-img {
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 12px;
+    border: 2px solid var(--color-border); 
+    box-shadow: 0 4px 15px rgba(212, 175, 55, 0.25);
+}
+
+.header-text {
+    text-align: left;
+}
+
+.header-text h2 {
+    font-size: 24px;
+    margin: 0 0 6px 0;
+    color: var(--color-border); 
+    letter-spacing: 1px;
+}
+
+.header-text p {
+    margin: 0;
+    font-size: 15px;
+    color: var(--color-text-muted); 
+}
+
+/* ==========================================
+   4. BARRA DE NAVEGACIÓN (NAVBAR)
+   ========================================== */
+.navbar {
+    background-color: var(--color-bg-dark);
+    width: 85%;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 12px 20px;
+    border: 2px solid var(--color-border);
+    border-radius: 50px;
+    box-shadow: 0 4px 15px rgba(212, 175, 55, 0.25);
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.navbar a {
+    color: var(--color-border);
+    text-decoration: none;
+    padding: 10px 20px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #ffffff;
+    background-color: rgba(212, 175, 55, 0.15);
+    border-radius: 25px;
+}
+
+/* ==========================================
+   5. ESTRUCTURA DE CONTENIDO (.row)
+   ========================================== */
+.row {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* ==========================================
+   6. LATERAL IZQUIERDO Y BOTONES
+   ========================================== */
+.sidebar-aventura {
+    background-color: var(--color-card-bg);
+    border: 1px solid var(--color-border);
+    border-radius: 12px;
+    padding: 20px;
+    flex: 1;
+    min-width: 280px;
+}
+
+.sidebar-header {
+    background-color: transparent;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sidebar-header h3 {
+    color: var(--color-border);
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.sidebar-header p {
+    color: var(--color-text-muted);
+    font-size: 14px;
+}
+
+.menu-lateral {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+}
+
+.menu-lateral button {
+    background-color: #242424;
+    color: var(--color-border);
+    border: 1px solid var(--color-border);
+    padding: 12px 15px;
+    border-radius: 8px;
+    font-size: 14px;
+    cursor: pointer;
+    text-align: left;
+    width: 100%;
+    transition: all 0.3s ease;
+}
+
+.menu-lateral button:hover {
+    background-color: var(--color-border);
+    color: #121212;
+    font-weight: bold;
+}
+
+/* ==========================================
+   7. BLOQUE DE CONTENIDO PRINCIPAL
+   ========================================== */
+.main-carrusel {
+    flex: 3;
+}
+
+.trayectoria-bloque {
+    background-color: var(--color-card-bg);
+    border: 1px solid var(--color-border);
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+
+.trayectoria-bloque h2 {
+    color: var(--color-border);
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.trayectoria-bloque p {
+    color: var(--color-text-main);
+}
+
+/* ==========================================
+   8. BLOQUE DE ANCHO COMPLETO (Formación / Proyectos)
+   ========================================== */
+.bloque-ancho-completo {
+    background-color: var(--color-card-bg);
+    border: 1px solid var(--color-border);
+    border-radius: 12px;
+    padding: 30px;
+    max-width: 1200px;
+    margin: 20px auto;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+    color: var(--color-text-main);
+}
+
+.bloque-ancho-completo h2 {
+    color: var(--color-border);
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+/* ==========================================
+   9. ADAPTACIÓN PARA MÓVILES (@media)
+   ========================================== */
+@media (max-width: 768px) {
+    .top-header-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header-text {
+        text-align: center;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        border-radius: 20px;
+        width: 95%;
+    }
+
+    .navbar a {
+        padding: 8px 12px;
+        width: 100%;
+        text-align: center;
+        border-bottom: 1px solid rgba(212, 175, 55, 0.1);
+    }
+
+    .row {
+        flex-direction: column;
+        padding: 10px;
+        gap: 20px;
+    }
+
+    .sidebar-aventura, 
+    .main-carrusel {
+        width: 100%;
+        min-width: 0;
+    }
+}
