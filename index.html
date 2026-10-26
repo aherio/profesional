@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiencia y Formación Profesional</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- ENCABEZADO PRINCIPAL -->
+    <header>
+        <div class="top-header-content">
+            <img alt="Fotografía de Fco Heriberto" src="img/HeriLogo.jpg" class="header-logo-img" />
+            <div class="header-text">
+                <h2>FCO HERIBERTO GARCÍA ESTÉVEZ</h2>
+                <p>Técnico superior en sistemas electrotécnicos y automatizados</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- BARRA DE NAVEGACIÓN PRINCIPAL -->
+    <nav class="navbar">
+        <a href="#" onclick="mostrarSeccion('laboral')">Vida Laboral</a>
+        <a href="#" onclick="mostrarSeccion('formacion')">Formación Académica</a>
+        <a href="#" onclick="mostrarSeccion('proyectos')">Proyectos</a>
+    </nav>
+
+    <!-- ================= SECCIÓN 1: VIDA LABORAL (Con barra lateral y carrusel) ================= -->
+    <div id="seccion-laboral" class="seccion-contenido">
+        <div class="row">
+            <aside class="sidebar-aventura">
+                <div class="sidebar-header">
+                    <h3>Vida Laboral</h3>
+                    
+                </div>
+                <nav class="lista-actividades">
+                    <div class="menu-lateral">
+                        <button onclick="mostrarTrayectoria('agua')">Comunidad de regantes</button>
+                        <button onclick="mostrarTrayectoria('garest')">Gares y fuentes S.L</button>
+                        <button onclick="mostrarTrayectoria('costa-nevada')">Residencia Costa Nevada</button>
+                        <button onclick="mostrarTrayectoria('electrico')">Electrigo Nerja</button>
+                    </div>
+                </nav>
+            </aside>
+
+            <section class="main-carrusel">
+                <div class="carousel-container">
+                    <div id="agua" class="trayectoria-bloque">
+                        <h2>Comunidad de Regantes</h2>
+                        <p>Empresa de la comarca granadina ubicada en la costa tropical que gestiona el regadío.<br><br>
+                            <strong>Tareas desempeñadas:</strong><br>
+                            1. Limpieza de canales de regadío.<br>
+                            2. Reparación y mantenimiento de arquetas con llaves de paso.<br>
+                            3. Trabajos de mantenimiento de obra menor.
+                        </p>
+                    </div>
+
+                    <div id="garest" class="trayectoria-bloque" style="display: none;">
+                        <h2>Gares y Fuentes S.L</h2>
+                        <p>Empresa del sector de la construcción dedicada a la contrata de obra principalmente con OSUNA S.A.<br><br>
+                            <strong>Tareas desempeñadas:</strong><br>
+                            1. Distribución de materiales de construcción y trabajo de apoyo (Peón).<br>
+                            2. Limpieza de obra.<br>
+                            3. Apoyo en replanteo y mediciones de las plantas.<br>
+                            4. Asignación de tareas administrativas.
+                        </p>
+                    </div>
+
+                    <div id="costa-nevada" class="trayectoria-bloque" style="display: none;">
+                        <h2>Hizn Garnata Geriatrica, S.L</h2>
+                        <p>Realización de prácticas de informática y posterior contratación (2012 a 2025).<br><br>
+                            <strong>Tareas desempeñadas:</strong><br>
+                            1. Reparación y mantenimiento de la red informática, puestos de trabajo y equipo Windows Server.<br>
+                            2. Mantenimiento de las instalaciones de comunicación de una centralita telefónica.<br>
+                            3. Creación de programas para la gestión de la residencia con Office (Excel, Access...) y Visual Basic.<br>
+                            4. Instalación de domótica con pulsadores de aviso, pulseras de radiofrecuencia y configuración IP.<br>
+                            5. Gestión de gastos de departamentos: mantenimiento, cocina, suministros.
+                        </p>
+                    </div>
+
+                    <div id="electrico" class="trayectoria-bloque" style="display: none;">
+                        <h2>Electrigo Nerja</h2>
+                        <p>Instalaciones eléctricas y mantenimiento.<br><br>
+                            <strong>Tareas desempeñadas:</strong><br>
+                            1. Montaje de cuadros eléctricos.<br>
+                            2. Cableado y canalizaciones en baja tensión.<br>
+                            3. Instalaciones fotovoltaicas.<br>
+                            4. Mantenimiento en zonas residenciales, montaje de sensores...<br>
+                            5. Derivaciones individuales.
+
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <!-- ================= SECCIÓN 2: FORMACIÓN ACADÉMICA (Una sola columna) ================= -->
+    <!-- ================= SECCIÓN 2: FORMACIÓN ACADÉMICA (Una sola columna) ================= -->
+<div id="seccion-formacion" class="seccion-contenido" style="display: none;">
+    <div class="bloque-ancho-completo">
+        <h2>Formación Académica y Certificaciones</h2>
+        
+        <div class="tarjeta-formacion">
+            <div class="icono-titulo">🎓</div>
+            <div>
+                <h3>Técnico Superior en Administración de Sistemas Informáticos en Red (ASIR)</h3>
+                <p>Especialización en administración de servidores, redes, seguridad informática y sistemas operativos.</p>
+            </div>
+        </div>
+
+        <div class="tarjeta-formacion">
+            <div class="icono-titulo">💻</div>
+            <div>
+                <h3>Programador de Aplicaciones Informáticas</h3>
+                <p>Desarrollo de software, lógica de programación y aplicaciones a medida.</p>
+            </div>
+        </div>
+
+        <div class="tarjeta-formacion">
+            <div class="icono-titulo">🏠</div>
+            <div>
+                <h3>Curso KNX Partner</h3>
+                <p>Certificación oficial en domótica e inmótica para el control y automatización inteligente de viviendas y edificios.</p>
+            </div>
+        </div>
+
+        <div class="tarjeta-formacion">
+            <div class="icono-titulo">⚡</div>
+            <div>
+                <h3>Técnico Superior en Sistemas Electrotécnicos y Automatizados</h3>
+                <p>Diseño, desarrollo y mantenimiento de instalaciones eléctricas, automatismos industriales y sistemas de control.</p>
+            </div>
+        </div>
+
+        <div class="tarjeta-formacion">
+            <div class="icono-titulo">🇬🇧</div>
+            <div>
+                <h3>Idiomas: Inglés</h3>
+                <p>Nivel Intermedio. Capacidad de lectura técnica, comprensión y comunicación profesional orientada al sector tecnológico.</p>
+            </div>
+        </div>
+
+        <div class="tarjeta-formacion">
+            <div class="icono-titulo">🚗</div>
+            <div>
+                <h3>Permisos de Conducir</h3>
+                <p>Carnets habilitados: <strong>Coche, Moto y Camión</strong>. Disponibilidad para desplazamiento y movilidad profesional.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!-- ================= SECCIÓN 3: PROYECTOS (Una sola columna) ================= -->
+    <!-- ================= SECCIÓN 3: OBJETIVOS Y VISIÓN PROFESIONAL ================= -->
+<div id="seccion-proyectos" class="seccion-contenido" style="display: none;">
+    <div class="bloque-ancho-completo">
+        <h2>Objetivos Profesionales y Visión de Futuro</h2>
+        
+        <div class="tarjeta-formacion">
+            <div class="icono-titulo">🔥</div>
+            <div>
+                <h3>Motivación y Capacidad de Aprendizaje</h3>
+                <p>Profesional proactivo y con constante iniciativa por aprender y adaptarme a nuevas tecnologías. Me define una alta motivación por el sector de la construcción y las instalaciones eléctricas de vanguardia.</p>
+            </div>
+        </div>
+
+        <div class="tarjeta-formacion">
+            <div class="icono-titulo">⚡</div>
+            <div>
+                <h3>Instalaciones y Automatización</h3>
+                <p>Pasión por el trabajo técnico integral: desde la ejecución de <strong>instalaciones convencionales, tendido de cableado y mecanismos</strong>, hasta el desarrollo de proyectos avanzados de <strong>domótica</strong>.</p>
+            </div>
+        </div>
+
+        <div class="tarjeta-formacion">
+            <div class="icono-titulo">🌱</div>
+            <div>
+                <h3>Nuevas Tecnologías y Sostenibilidad</h3>
+                <p>Enfocado en la implementación de soluciones orientadas al futuro y la eficiencia energética, con especial interés en la instalación de <strong>infraestructura de recarga para vehículos eléctricos (cargadores)</strong> y <strong>sistemas fotovoltaicos</strong>.</p>
+            </div>
+        </div>
+
+        <div class="tarjeta-formacion">
+            <div class="icono-titulo">🤝</div>
+            <div>
+                <h3>Aportación al Equipo</h3>
+                <p>Busco incorporarme a un equipo donde pueda aportar mi versatilidad técnica, compromiso y ganas de crecer profesionalmente, afrontando proyectos retadores desde el primer día.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!-- SCRIPT DE INTERACTIVIDAD -->
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
